@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --main-bg-color: #F5EEE4;
+    --TextColor: #FF7E00;
+    --TextColorAlter: #2F2F2F;
+
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* start of home css */
+.home{
+    
+    padding: 20px 60px;
+    height: 94%;
+    background-color: var(--main-bg-color);
+}
+
+.home .nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+.home .logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.home .logo .chef{
+    width: 30px;
+    height: 30px;
+}
+
+.home .logo .logoText{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.home .nav ul{
+    display: flex; 
+    justify-content: space-around;
+    align-items: center; 
+    list-style-type: none;
+}
+
+.home .nav ul li{
+    padding: 0 10px;
+
+}
+.home .nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.home .landing{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+}
+
+.home .landing .foodIMG{
+    width: 500px;
+}
+
+.home .left .arrow{
+    position: absolute;
+}
+
+/* 
+still did not finish the css for the home page
+*/   
+
+/* end of home css */
