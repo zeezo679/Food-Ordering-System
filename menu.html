@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
+    <script src="menue.js"></script>
     <link rel="stylesheet" href="menu.css">
 </head>
 <body>
@@ -25,30 +26,53 @@
         </div>
     </div>
 
+
     <div class="menu-bg-img">
         <img src="/images/menu images/burger-img.png" alt="", id="burger-img">
     </div>
 
-    <div class="meals">
-        <div class="m1">
+    
+    <div id="filter-controls">
+        <button data-category="all">All</button>
+        <button data-category="Burgers">Burgers</button>
+        <button data-category="Dessert">Dessert</button>
+        <button data-category="Healthy">Healthy</button>
+    </div>
+    
+    
+    <div class="meals" , id="meals">
+        <!-- Burgers -->
+        <div data-category="Burgers" class="m1" >
             <!-- Meal img -->
-            <img src="/images/menu images/meals/m1.jpg" alt="", id="m1-img">
+            <img src="/images/menu images/meals/b1.jpg" alt="", id="m1-img">
 
         </div>
         
-        <div class="m1">
+        <div data-category="Healthy" class="m1">
+            <div class="head">
+                <h1>Fruite Salat</h1>
+
+            </div>
             <!-- Meal img -->
             <img src="/images/menu images/meals/m1.jpg" alt="", id="m1-img">
+            <!-- Description -->
+            
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        <div data-category="Dessert" class="m1">
+            <!-- Meal img -->
+            <img src="/images/menu images/meals/d1.jpg" alt="", id="m1-img">
 
         </div>
-        <div class="m1">
+        <div data-category="Dessert" class="m1">
             <!-- Meal img -->
-            <img src="/images/menu images/meals/m1.jpg" alt="", id="m1-img">
-
-        </div>
-        <div class="m1">
-            <!-- Meal img -->
-            <img src="/images/menu images/meals/m1.jpg" alt="", id="m1-img">
+            <img src="/images/menu images/meals/d2.jpg" alt="", id="m1-img">
 
         </div>
 
