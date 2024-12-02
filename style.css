@@ -59,14 +59,15 @@ body{
     padding: 0 10px;
 
 }
-.home .nav ul li a{
+.home .nav ul li a, a{
     text-decoration: none;
     color: black;
 }
 
+
 .home .landing{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     margin-top: 20px;
 
@@ -78,10 +79,45 @@ body{
 
 .home .left .arrow{
     position: absolute;
+    top: 135px;
+    left: 350px;
 }
 
-/* 
-still did not finish the css for the home page
-*/   
+
+
+.button-5 {
+  display: flex;
+  align-items: center;
+  background-color: #fa6400;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  cursor: pointer;
+  font-size: 16px;
+  justify-content: center;
+  padding: 10px 15px;
+  transition: all 250ms;
+  height: 30px;
+}
+
+.button-5:hover {
+  background-color: #fb8332;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  transform: translateY(-1px);
+}
+
+
+.big .h_text{
+    color: #fe761b;
+    font-size: 45px;
+}
+
+.big .h_text span{
+    color: #2F2F2F;
+    font-size: 30px;
+}
+.para{
+    width: 700px;
+}
 
 /* end of home css */
