@@ -91,6 +91,7 @@ body{
     max-width: 20%;
     flex: 1 1 calc(33.33% - 10px);
     overflow: hidden;
+    justify-content: space-between;
 
 
 }
@@ -143,6 +144,9 @@ body{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bold;
     font-style: oblique;
+    position: relative;
+    bottom: 30%;
+
 }
 #meals .m1 .head{
     display: flex;
@@ -191,6 +195,7 @@ body{
     position: relative;
     margin-top: 10%;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 .who-con .dev{
     font-family: "Protest Revolution", sans-serif;
@@ -212,7 +217,7 @@ body{
     background-color: rgb(255, 0, 0);
     width: 40%;
     position: relative;
-    bottom: 74%;
+    bottom: 90%;
     height : 10%;
     left: 60%;
     border-radius: 0px 50px 0 50px;
@@ -226,4 +231,34 @@ body{
     bottom: 30%;
     font-weight: bold;
     
+}
+.user-fb{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    position: relative;
+    justify-content: center;
+    border-radius: 50%;
+    background: linear-gradient(135deg, rgba(183, 6, 6, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    border-radius: 100px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+.user-fb img{
+    border-radius:  0 50px;
+    height: 70%;
+    width: 10%;
+    left: 44%;
+    box-shadow: 5px 5px 7px rgb(0, 0, 0);;
+
+}
+.usr-con{
+    display: flex;
+    justify-content: center;
+}
+.usr-name{
+    position: relative;
+    bottom: 50%;
+    left: 40%;
 }
