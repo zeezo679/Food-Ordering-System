@@ -4,9 +4,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login/Register</title>
+    <link rel="stylesheet" href="login.css"> <!-- Created a new CSS file -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    Login and Resgister Page
+    <div class="main-container">
+
+    <!-- start login -->
+    <div class="wrapper">
+        <span class="icon-close"><ion-icon name="close"></ion-icon></span>
+
+        <div class="form-box login">
+            <h2>login</h2>
+            <form action="#" id="login-form"> <!--id by JS-->
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon>
+                    </span>
+                    <input type="email" id="login-email" required> <!--id by JS-->
+                    <label>Email</label>
+                    <div class="error"></div>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon>
+                    </span>
+                    <input type="password" id="login-password" required> <!--id by JS-->
+                    <label>Password</label>
+                    <div class="error"></div>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox"> <!-- used replacement for and id in label,input -->
+                    Remember me</label>
+                    <a href="#" class="forgot">Forgot Password?</a>
+                </div>
+                <button type="submit" class="btn" id="login-button1">Login</button> <!--id by JS-->
+                <div class="login-register">
+                    <p>Don't have an account? <a href="#" class="register-link">Register</a></p>
+                </div>
+            </form>
+        </div>
+        <!-- the Registeration__________________________________________________________________________________________________________ -->
+        <div class="form-box register">
+            <h2>Registeration</h2>
+            <form id="form" action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="person"></ion-icon>
+                    </span>
+                    <input type="text" id="username" required>
+                    <label>Username</label>
+                    <div class="error"></div>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon>
+                    </span>
+                    <input type="text" id="email" required>
+                    <label>Email</label>
+                    <div class="error"></div>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon>
+                    </span>
+                    <input type="password" id="password" required>
+                    <label>Password</label>
+                    <div class="error"></div>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox"> <!-- used replacement for and id in label,input -->
+                    I agree to the terms & conditions</label>
+                </div>
+                <button type="submit" class="btn" id="button">Register</button>
+                <div class="login-register">
+                    <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="login-account">
+        <div class="pop-up" id="pop-up">
+            <h4>Warning!</h4>
+            <p>This account does not exist</p>
+            <button class="ok" id="ok">OK</button>
+        </div>
+    </div>
+    <!-- end login -->
+<br>
+<br>
+<br>
+<br>
+<br>
+    </div>
+    <script src="login.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script> <!--icon-->
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script> <!--icon-->
 </body>
 </html>
